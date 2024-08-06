@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 1.3em;
+  background-color: #faf4d3;
+  position: relative;
+}
+
+hr {
+  margin-top: 10%;
+  color: #004643;
+}
+/* ----------global-------------- */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  color: #004643;
+  padding: 60px 49px;
+}
+
+/* ----------- main ----------------- */
+
+.welcome {
+  margin-bottom: 35px;
+  font-size: 1.5em;
+}
+
+.about {
+  line-height: 1.5em;
+  margin-bottom: 14px;
+}
+
+/* ------------- header ------------ */
+
+.text-styling {
+  font-size: 0.75em;
+}
+
+.sub-header {
+  margin: 10% 0 8% 0;
+  font-size: 30px;
+}
+
+/* -------------- contents ------------- */
+
+.right-corner {
+  display: block;
+  position: absolute;
+  right: 4%;
+  top: 2%;
+  border-top: 2px solid #004643;
+  border-right: 2px solid #004643;
+  width: 150px;
+  height: 150px;
+}
+
+.left-corner {
+  position: absolute;
+  bottom: -43px;
+  left: -30px;
+  border-bottom: 2px solid #004643;
+  border-left: 2px solid #004643;
+  width: 150px;
+  height: 150px;
+}
+/* ---------------corner---------------- */
+
+.skill {
+  margin: 0.3em 0 5% 20px;
+  font-size: 21px;
+}
+
+.dot {
+  margin-left: 20px;
+}
+
+.links:hover {
+  cursor: pointer;
+  color: pink;
+  background-color: red;
+}
+
+.links {
+  /* text-decoration: none; */
+  color: #004643;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* -------------------project/skill-------------------- */
+.footer-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10% 0 0 0;
+}
+
+.social-link {
+  width: 25px;
+  height: 25px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.git {
+  background-image: url(link-icons/github-brands-solid-figma.svg);
+}
+
+.linkdin {
+  background-image: url(link-icons/linkedin-brands-solid-figma.svg);
+}
+
+.gmail {
+  background-image: url(link-icons/envelope-solid-figma.svg);
+}
+
+.copy-right {
+  font-size: 10px;
+}
