@@ -5,12 +5,9 @@
   font-family: sans-serif;
 }
 
-html,
-body {
-  height: 100%;
+html {
   font-size: 1.3em;
   background-color: #faf4d3;
-  position: relative;
 }
 
 hr {
@@ -20,10 +17,12 @@ hr {
 /* ----------global-------------- */
 
 .main {
+  position: relative;
   display: flex;
   flex-direction: column;
   color: #004643;
   padding: 60px 49px;
+  /* height: 100vh; */
 }
 
 /* ----------- main ----------------- */
@@ -41,7 +40,7 @@ hr {
 /* ------------- header ------------ */
 
 .text-styling {
-  font-size: 0.75em;
+  font-size: 0.9em;
 }
 
 .sub-header {
@@ -54,8 +53,8 @@ hr {
 .right-corner {
   display: block;
   position: absolute;
-  right: 4%;
-  top: 2%;
+  right: 20px;
+  top: 20px;
   border-top: 2px solid #004643;
   border-right: 2px solid #004643;
   width: 150px;
@@ -64,8 +63,8 @@ hr {
 
 .left-corner {
   position: absolute;
-  bottom: -43px;
-  left: -30px;
+  bottom: 20px;
+  left: 20px;
   border-bottom: 2px solid #004643;
   border-left: 2px solid #004643;
   width: 150px;
@@ -84,12 +83,10 @@ hr {
 
 .links:hover {
   cursor: pointer;
-  color: pink;
-  background-color: red;
+  color: #4fa986;
 }
 
 .links {
-  /* text-decoration: none; */
   color: #004643;
   display: flex;
   flex-direction: column;
@@ -98,10 +95,15 @@ hr {
 /* -------------------project/skill-------------------- */
 .footer-content {
   position: relative;
+}
+
+.copy-social-container {
+  display: flex;
+}
+
+.social-link-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   margin: 10% 0 0 0;
 }
 
@@ -110,6 +112,13 @@ hr {
   height: 25px;
   display: block;
   background-repeat: no-repeat;
+}
+.copy-right {
+  font-size: 10px;
+  align-content: end;
+  margin: 0% 3% 0 0;
+  width: 100%;
+  padding: 0 0 7px 10%;
 }
 
 .git {
@@ -124,6 +133,147 @@ hr {
   background-image: url(link-icons/envelope-solid-figma.svg);
 }
 
-.copy-right {
-  font-size: 10px;
+/* ============================================================= */
+/* =========================media query========================= */
+/* ============================================================= */
+/* ============================================================= */
+@media only screen and (min-width: 800px) {
+  body {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    height: 100%;
+  }
+
+  html {
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+
+  .main {
+    align-content: center;
+    margin: 0% 5%;
+    /* height: auto; */
+    padding: 6% 6% 6% 12%;
+    height: 100%;
+  }
+
+  .welcome {
+    font-size: 2em;
+    margin: 20px 0 10px 0;
+  }
+
+  .text-styling {
+    font-size: 25px;
+  }
+
+  hr {
+    margin: 0;
+  }
+
+  /*=========== global style ==========  */
+
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 2% 5% 0;
+  }
+
+  .intro {
+    max-width: 60%;
+  }
+
+  .break {
+    color: #faf4d300;
+  }
+
+  /* =========== links & info ========== */
+
+  .my-skill-container {
+    margin: 0 auto;
+  }
+
+  .my-skill {
+    margin-bottom: 14%;
+  }
+
+  .projects-container {
+    /* margin: 0 10% 0 0%; */
+    line-height: 23px;
+  }
+
+  .copy-social-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* padding: 0 0 1.5% 10%; */
+  }
+
+  .social-link-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 35px;
+  }
+
+  .copy-right {
+    height: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* =========== corner design =========== */
+
+  .left-corner {
+    bottom: 50px;
+    left: 5%;
+    width: 350px;
+    height: 270px;
+    border-left: 5px solid #004643;
+    border-bottom: 5px solid #004643;
+  }
+
+  .right-corner {
+    top: 50px;
+    right: 5%;
+    width: 350px;
+    height: 260px;
+    border-top: 5px solid #004643;
+    border-right: 5px solid #004643;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main {
+    padding: 6%;
+  }
+
+  .intro {
+    margin-left: 150px;
+  }
+
+  .main-content {
+    margin: 3% 15% 5% 150px;
+  }
+
+  .left-corner {
+    bottom: 50px;
+    left: 10%;
+    width: 550px;
+    height: 270px;
+    border-left: 5px solid #004643;
+    border-bottom: 5px solid #004643;
+  }
+
+  .right-corner {
+    top: 50px;
+    right: 10%;
+    width: 550px;
+    height: 260px;
+    border-top: 5px solid #004643;
+    border-right: 5px solid #004643;
+  }
 }
