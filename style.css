@@ -5,6 +5,7 @@
   font-family: sans-serif;
 }
 
+body,
 html {
   font-size: 1.3em;
   background-color: #faf4d3;
@@ -22,7 +23,6 @@ hr {
   flex-direction: column;
   color: #004643;
   padding: 60px 49px;
-  /* height: 100vh; */
 }
 
 /* ----------- main ----------------- */
@@ -69,6 +69,7 @@ hr {
   border-left: 2px solid #004643;
   width: 150px;
   height: 150px;
+  pointer-events: none;
 }
 /* ---------------corner---------------- */
 
@@ -79,6 +80,7 @@ hr {
 
 .dot {
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .links:hover {
@@ -133,20 +135,16 @@ hr {
   background-image: url(link-icons/envelope-solid-figma.svg);
 }
 
-/* ============================================================= */
 /* =========================media query========================= */
-/* ============================================================= */
-/* ============================================================= */
-@media only screen and (min-width: 800px) {
+
+@media only screen and (min-width: 700px) {
   body {
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
     height: 100%;
   }
 
   html {
-    /* overflow: hidden; */
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -155,8 +153,7 @@ hr {
   .main {
     align-content: center;
     margin: 0% 5%;
-    /* height: auto; */
-    padding: 6% 6% 6% 12%;
+    padding: 6% 0% 6% 15%;
     height: 100%;
   }
 
@@ -183,10 +180,15 @@ hr {
 
   .intro {
     max-width: 60%;
+    min-width: 70%;
   }
 
   .break {
     color: #faf4d300;
+  }
+
+  .dot {
+    margin-bottom: 10%;
   }
 
   /* =========== links & info ========== */
@@ -200,7 +202,6 @@ hr {
   }
 
   .projects-container {
-    /* margin: 0 10% 0 0%; */
     line-height: 23px;
   }
 
@@ -208,7 +209,8 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    /* padding: 0 0 1.5% 10%; */
+    height: auto;
+    width: 30%;
   }
 
   .social-link-container {
@@ -221,8 +223,9 @@ hr {
 
   .copy-right {
     height: 10px;
+    width: auto;
     margin: 0;
-    padding: 0;
+    padding: 0 5% 10% 0;
   }
 
   /* =========== corner design =========== */
@@ -248,11 +251,18 @@ hr {
 
 @media only screen and (min-width: 1200px) {
   .main {
+    align-content: center;
+    margin: 0% 5%;
     padding: 6%;
+    height: 100%;
   }
 
   .intro {
     margin-left: 150px;
+    min-width: 0%;
+  }
+
+  .about {
   }
 
   .main-content {
